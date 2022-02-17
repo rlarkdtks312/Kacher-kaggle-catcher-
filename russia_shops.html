@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2380078f1c784f6a8e9b2838b83dd5b0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2380078f1c784f6a8e9b2838b83dd5b0" ></div>
+        
+</body>
+<script>    
+    
+            var map_2380078f1c784f6a8e9b2838b83dd5b0 = L.map(
+                "map_2380078f1c784f6a8e9b2838b83dd5b0",
+                {
+                    center: [55.29130915481062, 52.286040870752906],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e39685a62f9040a595431306605445b4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+            var tile_layer_d45bd0d19617454ea5bb0053654f90e7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+            var circle_marker_d5f7736e440d4619aa1782732ef43873 = L.circleMarker(
+                [62.02522883338076, 129.72024199904732],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.1705, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_3040901a6c3a4ee3af965a097fe79024 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e48aec71188449d7868665c723bc0e91 = $(`<div id="html_e48aec71188449d7868665c723bc0e91" style="width: 100.0%; height: 100.0%;">!Якутск Орджоникидзе, 56 фран</div>`)[0];
+            popup_3040901a6c3a4ee3af965a097fe79024.setContent(html_e48aec71188449d7868665c723bc0e91);
+        
+
+        circle_marker_d5f7736e440d4619aa1782732ef43873.bindPopup(popup_3040901a6c3a4ee3af965a097fe79024)
+        ;
+
+        
+    
+    
+            var circle_marker_db3c9fd123c54844969a455c6351b144 = L.circleMarker(
+                [62.037301616892094, 129.71780739602482],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6311, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_9601bf0b29c2457dab3c3204dc20def8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21dc267d0d8749efa55cf78d6411633c = $(`<div id="html_21dc267d0d8749efa55cf78d6411633c" style="width: 100.0%; height: 100.0%;">!Якутск ТЦ "Центральный" фран</div>`)[0];
+            popup_9601bf0b29c2457dab3c3204dc20def8.setContent(html_21dc267d0d8749efa55cf78d6411633c);
+        
+
+        circle_marker_db3c9fd123c54844969a455c6351b144.bindPopup(popup_9601bf0b29c2457dab3c3204dc20def8)
+        ;
+
+        
+    
+    
+            var circle_marker_ac238a96769545f3bdbfd02ef4b4961c = L.circleMarker(
+                [45.01296654205926, 38.930381394697974],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.062, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_9d597401c9aa4ea091752cbc7fc2b5b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d742cbdafe1f48a5a91df01509fcc0eb = $(`<div id="html_d742cbdafe1f48a5a91df01509fcc0eb" style="width: 100.0%; height: 100.0%;">Адыгея ТЦ "Мега"</div>`)[0];
+            popup_9d597401c9aa4ea091752cbc7fc2b5b2.setContent(html_d742cbdafe1f48a5a91df01509fcc0eb);
+        
+
+        circle_marker_ac238a96769545f3bdbfd02ef4b4961c.bindPopup(popup_9d597401c9aa4ea091752cbc7fc2b5b2)
+        ;
+
+        
+    
+    
+            var circle_marker_5ec3223a5be14a9ca7c921db393b4fa1 = L.circleMarker(
+                [55.79662072030961, 37.926708269234666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.8355, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_237809dcb87f46cf89aaacb56d25b137 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fd0c437f35f4e48a9ae82635ec07abb = $(`<div id="html_6fd0c437f35f4e48a9ae82635ec07abb" style="width: 100.0%; height: 100.0%;">Балашиха ТРК "Октябрь-Киномир"</div>`)[0];
+            popup_237809dcb87f46cf89aaacb56d25b137.setContent(html_6fd0c437f35f4e48a9ae82635ec07abb);
+        
+
+        circle_marker_5ec3223a5be14a9ca7c921db393b4fa1.bindPopup(popup_237809dcb87f46cf89aaacb56d25b137)
+        ;
+
+        
+    
+    
+            var circle_marker_2604bbefb02d4ffb969a13a520dd889c = L.circleMarker(
+                [48.77213659373243, 44.79983092746513],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3942, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_d0d8aa64a684410f8b9c1b468d38a0ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ade60e5e7c343f4a97f4d6fa5b09c03 = $(`<div id="html_0ade60e5e7c343f4a97f4d6fa5b09c03" style="width: 100.0%; height: 100.0%;">Волжский ТЦ "Волга Молл"</div>`)[0];
+            popup_d0d8aa64a684410f8b9c1b468d38a0ba.setContent(html_0ade60e5e7c343f4a97f4d6fa5b09c03);
+        
+
+        circle_marker_2604bbefb02d4ffb969a13a520dd889c.bindPopup(popup_d0d8aa64a684410f8b9c1b468d38a0ba)
+        ;
+
+        
+    
+    
+            var circle_marker_b888520ca1594292bec9d9a4ff7c8814 = L.circleMarker(
+                [59.19933176339063, 39.85963296975052],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.2762, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_a493d0b7cd6b4358900fe5798b7ca92d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57d5cfa407d2486fa5bf75c2d1f91a88 = $(`<div id="html_57d5cfa407d2486fa5bf75c2d1f91a88" style="width: 100.0%; height: 100.0%;">Вологда ТРЦ "Мармелад"</div>`)[0];
+            popup_a493d0b7cd6b4358900fe5798b7ca92d.setContent(html_57d5cfa407d2486fa5bf75c2d1f91a88);
+        
+
+        circle_marker_b888520ca1594292bec9d9a4ff7c8814.bindPopup(popup_a493d0b7cd6b4358900fe5798b7ca92d)
+        ;
+
+        
+    
+    
+            var circle_marker_a96764e2996741f0ac0cb94281291da3 = L.circleMarker(
+                [51.6637860957119, 39.19722065453178],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0489, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_111701fec1a341dc8d093bbf69b43e9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_961f3f7263f6482eaf895b333db27193 = $(`<div id="html_961f3f7263f6482eaf895b333db27193" style="width: 100.0%; height: 100.0%;">Воронеж (Плехановская, 13)</div>`)[0];
+            popup_111701fec1a341dc8d093bbf69b43e9c.setContent(html_961f3f7263f6482eaf895b333db27193);
+        
+
+        circle_marker_a96764e2996741f0ac0cb94281291da3.bindPopup(popup_111701fec1a341dc8d093bbf69b43e9c)
+        ;
+
+        
+    
+    
+            var circle_marker_d96475c7d808473b90b089a3cf5b36d1 = L.circleMarker(
+                [51.69703307855997, 39.273326600570286],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.7058, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_9ac5d420a15a4b27ada0c41b344526bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5ef8f2e5b3449ae9a408ae8191b5ad4 = $(`<div id="html_a5ef8f2e5b3449ae9a408ae8191b5ad4" style="width: 100.0%; height: 100.0%;">Воронеж ТРЦ "Максимир"</div>`)[0];
+            popup_9ac5d420a15a4b27ada0c41b344526bf.setContent(html_a5ef8f2e5b3449ae9a408ae8191b5ad4);
+        
+
+        circle_marker_d96475c7d808473b90b089a3cf5b36d1.bindPopup(popup_9ac5d420a15a4b27ada0c41b344526bf)
+        ;
+
+        
+    
+    
+            var circle_marker_dd210e32330b4550ac8f3fa15e7a8b40 = L.circleMarker(
+                [51.78903488096228, 39.205010727554324],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3595, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_f6eca214b5dd46288346c16b4bbf38e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c52b2a3a55b45a7af738c01c14bf4ca = $(`<div id="html_4c52b2a3a55b45a7af738c01c14bf4ca" style="width: 100.0%; height: 100.0%;">Воронеж ТРЦ Сити-Парк "Град"</div>`)[0];
+            popup_f6eca214b5dd46288346c16b4bbf38e3.setContent(html_4c52b2a3a55b45a7af738c01c14bf4ca);
+        
+
+        circle_marker_dd210e32330b4550ac8f3fa15e7a8b40.bindPopup(popup_f6eca214b5dd46288346c16b4bbf38e3)
+        ;
+
+        
+    
+    
+            var circle_marker_970711c5f33547fca400f4cf56f2e3b0 = L.circleMarker(
+                [51.6723172161094, 39.16413488151351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5866, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_85ac7e9208904a108ff8d3413f7c284f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_faadf4b417954cf1ac2e02b5c6352541 = $(`<div id="html_faadf4b417954cf1ac2e02b5c6352541" style="width: 100.0%; height: 100.0%;">Выездная Торговля</div>`)[0];
+            popup_85ac7e9208904a108ff8d3413f7c284f.setContent(html_faadf4b417954cf1ac2e02b5c6352541);
+        
+
+        circle_marker_970711c5f33547fca400f4cf56f2e3b0.bindPopup(popup_85ac7e9208904a108ff8d3413f7c284f)
+        ;
+
+        
+    
+    
+            var circle_marker_f66ed907a6db48f0b69f9e3d1d2526eb = L.circleMarker(
+                [55.59725083672762, 38.123644998835836],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4523, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_6f5852dac8184e0390ec08eb6aa8e63b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_142495235dcf4844a5410dfe0052a87b = $(`<div id="html_142495235dcf4844a5410dfe0052a87b" style="width: 100.0%; height: 100.0%;">Жуковский ул. Чкалова 39м?</div>`)[0];
+            popup_6f5852dac8184e0390ec08eb6aa8e63b.setContent(html_142495235dcf4844a5410dfe0052a87b);
+        
+
+        circle_marker_f66ed907a6db48f0b69f9e3d1d2526eb.bindPopup(popup_6f5852dac8184e0390ec08eb6aa8e63b)
+        ;
+
+        
+    
+    
+            var circle_marker_98cfe14d227044f6af30eed3ef1c0a6d = L.circleMarker(
+                [55.59962715658703, 38.12065574116319],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.0572, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_7ad5d5e19ceb48b9b92c50482ac773f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5a09a45cfdf4403a5fd09e6de256af0 = $(`<div id="html_e5a09a45cfdf4403a5fd09e6de256af0" style="width: 100.0%; height: 100.0%;">Жуковский ул. Чкалова 39м²</div>`)[0];
+            popup_7ad5d5e19ceb48b9b92c50482ac773f8.setContent(html_e5a09a45cfdf4403a5fd09e6de256af0);
+        
+
+        circle_marker_98cfe14d227044f6af30eed3ef1c0a6d.bindPopup(popup_7ad5d5e19ceb48b9b92c50482ac773f8)
+        ;
+
+        
+    
+    
+            var circle_marker_e3e1fe99177b43f5b1ca1f979499fcc3 = L.circleMarker(
+                [55.74425126787867, 37.85613088382025],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3478, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_31547583db2b4b709dbbad03e57ee612 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cb8f431201e4c3c814f1c4257e083fe = $(`<div id="html_6cb8f431201e4c3c814f1c4257e083fe" style="width: 100.0%; height: 100.0%;">Интернет-магазин ЧС</div>`)[0];
+            popup_31547583db2b4b709dbbad03e57ee612.setContent(html_6cb8f431201e4c3c814f1c4257e083fe);
+        
+
+        circle_marker_e3e1fe99177b43f5b1ca1f979499fcc3.bindPopup(popup_31547583db2b4b709dbbad03e57ee612)
+        ;
+
+        
+    
+    
+            var circle_marker_48023352c61643a6a4df1fd2a45a84ff = L.circleMarker(
+                [55.86102167353668, 48.90016731558103],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.9763, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_0bea841346764b54a11395300f876bfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_306728a081aa4b94b16c18b90fc955da = $(`<div id="html_306728a081aa4b94b16c18b90fc955da" style="width: 100.0%; height: 100.0%;">Казань ТЦ "Бехетле"</div>`)[0];
+            popup_0bea841346764b54a11395300f876bfd.setContent(html_306728a081aa4b94b16c18b90fc955da);
+        
+
+        circle_marker_48023352c61643a6a4df1fd2a45a84ff.bindPopup(popup_0bea841346764b54a11395300f876bfd)
+        ;
+
+        
+    
+    
+            var circle_marker_e373feb9fcf549be80e845714e883325 = L.circleMarker(
+                [55.83006084581892, 49.118158070006814],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.6375, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_574cd7136c064311b06b7f01a1b0abc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71be337baadb472eb9e035e294a4d24a = $(`<div id="html_71be337baadb472eb9e035e294a4d24a" style="width: 100.0%; height: 100.0%;">Казань ТЦ "ПаркХаус" II</div>`)[0];
+            popup_574cd7136c064311b06b7f01a1b0abc3.setContent(html_71be337baadb472eb9e035e294a4d24a);
+        
+
+        circle_marker_e373feb9fcf549be80e845714e883325.bindPopup(popup_574cd7136c064311b06b7f01a1b0abc3)
+        ;
+
+        
+    
+    
+            var circle_marker_7215780a49434729bd7603bcbd9c98f0 = L.circleMarker(
+                [54.51627336977013, 36.24648783160098],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.1201, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_9979196be67949b4bfae41ba5101b6c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7926afd1c9f74e778b29335b09527ed3 = $(`<div id="html_7926afd1c9f74e778b29335b09527ed3" style="width: 100.0%; height: 100.0%;">Калуга ТРЦ "XXI век"</div>`)[0];
+            popup_9979196be67949b4bfae41ba5101b6c9.setContent(html_7926afd1c9f74e778b29335b09527ed3);
+        
+
+        circle_marker_7215780a49434729bd7603bcbd9c98f0.bindPopup(popup_9979196be67949b4bfae41ba5101b6c9)
+        ;
+
+        
+    
+    
+            var circle_marker_a6737b87f3ea44d18354a0506ccb3a1e = L.circleMarker(
+                [55.084435206187386, 38.80062722765616],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.1633, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_2b019e0e47364f4bb3fdfc8be2235486 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7fff87ac9fc48e2a565dae43e5ff20a = $(`<div id="html_b7fff87ac9fc48e2a565dae43e5ff20a" style="width: 100.0%; height: 100.0%;">Коломна ТЦ "Рио"</div>`)[0];
+            popup_2b019e0e47364f4bb3fdfc8be2235486.setContent(html_b7fff87ac9fc48e2a565dae43e5ff20a);
+        
+
+        circle_marker_a6737b87f3ea44d18354a0506ccb3a1e.bindPopup(popup_2b019e0e47364f4bb3fdfc8be2235486)
+        ;
+
+        
+    
+    
+            var circle_marker_e1725e8a18704bba8c7d9dbd77f92643 = L.circleMarker(
+                [56.034563392471625, 92.90775169884985],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5838, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_9ed46a9f25ff4ff988dcf0bcf4809781 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87c486ae67c24e44b8e64a8db8421152 = $(`<div id="html_87c486ae67c24e44b8e64a8db8421152" style="width: 100.0%; height: 100.0%;">Красноярск ТЦ "Взлетка Плаза"</div>`)[0];
+            popup_9ed46a9f25ff4ff988dcf0bcf4809781.setContent(html_87c486ae67c24e44b8e64a8db8421152);
+        
+
+        circle_marker_e1725e8a18704bba8c7d9dbd77f92643.bindPopup(popup_9ed46a9f25ff4ff988dcf0bcf4809781)
+        ;
+
+        
+    
+    
+            var circle_marker_0f03cd2cfd5c405191ca442ee6d9fe69 = L.circleMarker(
+                [56.037444791193835, 92.93459674303213],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5486, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_bb10be565ed840d79db3003acf10efe9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15a0f9cd24964023800b6dd845ead3a3 = $(`<div id="html_15a0f9cd24964023800b6dd845ead3a3" style="width: 100.0%; height: 100.0%;">Красноярск ТЦ "Июнь"</div>`)[0];
+            popup_bb10be565ed840d79db3003acf10efe9.setContent(html_15a0f9cd24964023800b6dd845ead3a3);
+        
+
+        circle_marker_0f03cd2cfd5c405191ca442ee6d9fe69.bindPopup(popup_bb10be565ed840d79db3003acf10efe9)
+        ;
+
+        
+    
+    
+            var circle_marker_cbc1795d9f8543118a97c922fbc14f29 = L.circleMarker(
+                [51.73817162131831, 36.19237495424488],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3455, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_24d2cab7d19d44fd915339ad8cb69fad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b6a6fcf2cb643008b0df946a54fc2ca = $(`<div id="html_2b6a6fcf2cb643008b0df946a54fc2ca" style="width: 100.0%; height: 100.0%;">Курск ТЦ "Пушкинский"</div>`)[0];
+            popup_24d2cab7d19d44fd915339ad8cb69fad.setContent(html_2b6a6fcf2cb643008b0df946a54fc2ca);
+        
+
+        circle_marker_cbc1795d9f8543118a97c922fbc14f29.bindPopup(popup_24d2cab7d19d44fd915339ad8cb69fad)
+        ;
+
+        
+    
+    
+            var circle_marker_8eb7dc3ad66f4b7a92f0037b221461d3 = L.circleMarker(
+                [51.749131378587414, 36.19165527111585],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5872, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_c4a164922a804ab0a4902b1d30e8d298 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9493b3893c054d10b3cf68ee711981f6 = $(`<div id="html_9493b3893c054d10b3cf68ee711981f6" style="width: 100.0%; height: 100.0%;">Москва "Распродажа"</div>`)[0];
+            popup_c4a164922a804ab0a4902b1d30e8d298.setContent(html_9493b3893c054d10b3cf68ee711981f6);
+        
+
+        circle_marker_8eb7dc3ad66f4b7a92f0037b221461d3.bindPopup(popup_c4a164922a804ab0a4902b1d30e8d298)
+        ;
+
+        
+    
+    
+            var circle_marker_96e1b6321d334f8488500bc4e561b9b9 = L.circleMarker(
+                [55.749116642446964, 37.53971795116728],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.856, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_eaea84d3412f46b18a8a33daa599b3df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a02c289bfa7c4525b56c0ba2d0b42391 = $(`<div id="html_a02c289bfa7c4525b56c0ba2d0b42391" style="width: 100.0%; height: 100.0%;">Москва МТРЦ "Афи Молл"</div>`)[0];
+            popup_eaea84d3412f46b18a8a33daa599b3df.setContent(html_a02c289bfa7c4525b56c0ba2d0b42391);
+        
+
+        circle_marker_96e1b6321d334f8488500bc4e561b9b9.bindPopup(popup_eaea84d3412f46b18a8a33daa599b3df)
+        ;
+
+        
+    
+    
+            var circle_marker_c3aac9a79ad34a1d8e5796d1f1f6f27c = L.circleMarker(
+                [55.753186031355504, 37.54463070833131],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.023, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_144eb77811d04b318c7f6294768f5f34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_045872ffa92b49a990472f5a00b4279e = $(`<div id="html_045872ffa92b49a990472f5a00b4279e" style="width: 100.0%; height: 100.0%;">Москва Магазин С21</div>`)[0];
+            popup_144eb77811d04b318c7f6294768f5f34.setContent(html_045872ffa92b49a990472f5a00b4279e);
+        
+
+        circle_marker_c3aac9a79ad34a1d8e5796d1f1f6f27c.bindPopup(popup_144eb77811d04b318c7f6294768f5f34)
+        ;
+
+        
+    
+    
+            var circle_marker_fe4f5626d0db42f1ac41fcd737836793 = L.circleMarker(
+                [55.758272274039825, 37.74128655991364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7705, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_970e26fae1bf4bc2b5fde938e0c5a336 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f06a4f2dfbe3464cb9b9eb34e742e3b2 = $(`<div id="html_f06a4f2dfbe3464cb9b9eb34e742e3b2" style="width: 100.0%; height: 100.0%;">Москва ТК "Буденовский" (пав.А2)</div>`)[0];
+            popup_970e26fae1bf4bc2b5fde938e0c5a336.setContent(html_f06a4f2dfbe3464cb9b9eb34e742e3b2);
+        
+
+        circle_marker_fe4f5626d0db42f1ac41fcd737836793.bindPopup(popup_970e26fae1bf4bc2b5fde938e0c5a336)
+        ;
+
+        
+    
+    
+            var circle_marker_389d79b807a245d9ad5ffa538cec1dcc = L.circleMarker(
+                [55.75829214178443, 37.74124324086881],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.3886, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_7f66abab6bba4f6db1921abd1d3be990 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97bbe4beb75f40e6a021ea9a9c059d9b = $(`<div id="html_97bbe4beb75f40e6a021ea9a9c059d9b" style="width: 100.0%; height: 100.0%;">Москва ТК "Буденовский" (пав.К7)</div>`)[0];
+            popup_7f66abab6bba4f6db1921abd1d3be990.setContent(html_97bbe4beb75f40e6a021ea9a9c059d9b);
+        
+
+        circle_marker_389d79b807a245d9ad5ffa538cec1dcc.bindPopup(popup_7f66abab6bba4f6db1921abd1d3be990)
+        ;
+
+        
+    
+    
+            var circle_marker_a7aca92b579d4a959af9f0a66904bf86 = L.circleMarker(
+                [55.75741804530215, 37.659152271555435],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.192, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_a6968175318a442eb5960a6198b05fa4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a519b14769d46b28072bc99acc6810e = $(`<div id="html_6a519b14769d46b28072bc99acc6810e" style="width: 100.0%; height: 100.0%;">Москва ТРК "Атриум"</div>`)[0];
+            popup_a6968175318a442eb5960a6198b05fa4.setContent(html_6a519b14769d46b28072bc99acc6810e);
+        
+
+        circle_marker_a7aca92b579d4a959af9f0a66904bf86.bindPopup(popup_a6968175318a442eb5960a6198b05fa4)
+        ;
+
+        
+    
+    
+            var circle_marker_5aaad9c379484da2af2325c7337f76e8 = L.circleMarker(
+                [55.643920792406774, 37.52642801202969],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.789, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_fb5c86091ee241ac82ec3e279e3c21e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff589d113ed346909cfc31ce2732c7c5 = $(`<div id="html_ff589d113ed346909cfc31ce2732c7c5" style="width: 100.0%; height: 100.0%;">Москва ТЦ "Ареал" (Беляево)</div>`)[0];
+            popup_fb5c86091ee241ac82ec3e279e3c21e9.setContent(html_ff589d113ed346909cfc31ce2732c7c5);
+        
+
+        circle_marker_5aaad9c379484da2af2325c7337f76e8.bindPopup(popup_fb5c86091ee241ac82ec3e279e3c21e9)
+        ;
+
+        
+    
+    
+            var circle_marker_93a01a765df84691ad491d886df865c3 = L.circleMarker(
+                [55.65846529086957, 37.845193240865896],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.6657, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_a5f57e4f8d514f6bb11f77dc77158e06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ecbb21490ec4c0dac0b3ac0a5c517ed = $(`<div id="html_5ecbb21490ec4c0dac0b3ac0a5c517ed" style="width: 100.0%; height: 100.0%;">Москва ТЦ "МЕГА Белая Дача II"</div>`)[0];
+            popup_a5f57e4f8d514f6bb11f77dc77158e06.setContent(html_5ecbb21490ec4c0dac0b3ac0a5c517ed);
+        
+
+        circle_marker_93a01a765df84691ad491d886df865c3.bindPopup(popup_a5f57e4f8d514f6bb11f77dc77158e06)
+        ;
+
+        
+    
+    
+            var circle_marker_eefca8a4e49242f8b881d3f0cf0284aa = L.circleMarker(
+                [55.60433461371562, 37.49193038319266],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.4557, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_fad406dcb7fb4572bbe832d3065fb845 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcc53d8d756844039a3d55f69e56fe24 = $(`<div id="html_dcc53d8d756844039a3d55f69e56fe24" style="width: 100.0%; height: 100.0%;">Москва ТЦ "МЕГА Теплый Стан" II</div>`)[0];
+            popup_fad406dcb7fb4572bbe832d3065fb845.setContent(html_dcc53d8d756844039a3d55f69e56fe24);
+        
+
+        circle_marker_eefca8a4e49242f8b881d3f0cf0284aa.bindPopup(popup_fad406dcb7fb4572bbe832d3065fb845)
+        ;
+
+        
+    
+    
+            var circle_marker_3b3ed38ce34143148c0853326cc36517 = L.circleMarker(
+                [55.737907223812826, 37.85703268319664],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8713, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_f3e523d2a7a24b4c9782909a2b43ed42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32b105d6ddad46a092907fa6af9127d3 = $(`<div id="html_32b105d6ddad46a092907fa6af9127d3" style="width: 100.0%; height: 100.0%;">Москва ТЦ "Новый век" (Новокосино)</div>`)[0];
+            popup_f3e523d2a7a24b4c9782909a2b43ed42.setContent(html_32b105d6ddad46a092907fa6af9127d3);
+        
+
+        circle_marker_3b3ed38ce34143148c0853326cc36517.bindPopup(popup_f3e523d2a7a24b4c9782909a2b43ed42)
+        ;
+
+        
+    
+    
+            var circle_marker_8dd7e1bb466c4945a7b4e119adf89949 = L.circleMarker(
+                [55.892069619233105, 37.727542383201246],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0828, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_edfce96c123c468f9b305427ac59dee0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61de4116cca94faf87d1b57d7dd5bacf = $(`<div id="html_61de4116cca94faf87d1b57d7dd5bacf" style="width: 100.0%; height: 100.0%;">Москва ТЦ "Перловский"</div>`)[0];
+            popup_edfce96c123c468f9b305427ac59dee0.setContent(html_61de4116cca94faf87d1b57d7dd5bacf);
+        
+
+        circle_marker_8dd7e1bb466c4945a7b4e119adf89949.bindPopup(popup_edfce96c123c468f9b305427ac59dee0)
+        ;
+
+        
+    
+    
+            var circle_marker_d4abaefb8b4a49d9a5757ed972bf7458 = L.circleMarker(
+                [55.78300780861633, 37.720300469705386],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.0777, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_428d0e288ee24cf98cb9fa51ed00fe5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6f3914311a34794be58eedd311ec191 = $(`<div id="html_a6f3914311a34794be58eedd311ec191" style="width: 100.0%; height: 100.0%;">Москва ТЦ "Семеновский"</div>`)[0];
+            popup_428d0e288ee24cf98cb9fa51ed00fe5b.setContent(html_a6f3914311a34794be58eedd311ec191);
+        
+
+        circle_marker_d4abaefb8b4a49d9a5757ed972bf7458.bindPopup(popup_428d0e288ee24cf98cb9fa51ed00fe5b)
+        ;
+
+        
+    
+    
+            var circle_marker_12fd710769dd4b6aa0526f0e29e344dc = L.circleMarker(
+                [55.785090401085675, 37.71250541388457],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8781, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_4e64ef946d804f6fa56163668ed8ce07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc972437b7ad443785965b566e13b92f = $(`<div id="html_cc972437b7ad443785965b566e13b92f" style="width: 100.0%; height: 100.0%;">Москва ТЦ "Серебряный Дом"</div>`)[0];
+            popup_4e64ef946d804f6fa56163668ed8ce07.setContent(html_cc972437b7ad443785965b566e13b92f);
+        
+
+        circle_marker_12fd710769dd4b6aa0526f0e29e344dc.bindPopup(popup_4e64ef946d804f6fa56163668ed8ce07)
+        ;
+
+        
+    
+    
+            var circle_marker_e139c27fe5904318b50b83b01e0988dc = L.circleMarker(
+                [55.902831039379166, 37.748112542321],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5482, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_51790fe5415b4031bd0b2fa8e974fb21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7205deb67b2a4a4da29121aba43909b5 = $(`<div id="html_7205deb67b2a4a4da29121aba43909b5" style="width: 100.0%; height: 100.0%;">Мытищи ТРК "XL-3"</div>`)[0];
+            popup_51790fe5415b4031bd0b2fa8e974fb21.setContent(html_7205deb67b2a4a4da29121aba43909b5);
+        
+
+        circle_marker_e139c27fe5904318b50b83b01e0988dc.bindPopup(popup_51790fe5415b4031bd0b2fa8e974fb21)
+        ;
+
+        
+    
+    
+            var circle_marker_d779dfede9054be5b60f9a3ca79fa92b = L.circleMarker(
+                [56.317923281992066, 43.9254617139005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6451, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_deb8d00a742c4f95a294acd2bc634016 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8039312be99741cabfaa1e5e8997b8bf = $(`<div id="html_8039312be99741cabfaa1e5e8997b8bf" style="width: 100.0%; height: 100.0%;">Н.Новгород ТРЦ "РИО"</div>`)[0];
+            popup_deb8d00a742c4f95a294acd2bc634016.setContent(html_8039312be99741cabfaa1e5e8997b8bf);
+        
+
+        circle_marker_d779dfede9054be5b60f9a3ca79fa92b.bindPopup(popup_deb8d00a742c4f95a294acd2bc634016)
+        ;
+
+        
+    
+    
+            var circle_marker_c267ccb288674aeea65d65fc9604b0d1 = L.circleMarker(
+                [56.307479479513596, 44.074917042735976],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.9016, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_3341218d6b464b90853c05041a394ff4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e75e1e28c0984541a13cc55f4421f832 = $(`<div id="html_e75e1e28c0984541a13cc55f4421f832" style="width: 100.0%; height: 100.0%;">Н.Новгород ТРЦ "Фантастика"</div>`)[0];
+            popup_3341218d6b464b90853c05041a394ff4.setContent(html_e75e1e28c0984541a13cc55f4421f832);
+        
+
+        circle_marker_c267ccb288674aeea65d65fc9604b0d1.bindPopup(popup_3341218d6b464b90853c05041a394ff4)
+        ;
+
+        
+    
+    
+            var circle_marker_004f0c359d8e40c9b1427261f8704ae9 = L.circleMarker(
+                [55.043900157462055, 82.92261732735507],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.033, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_7a600851e0eb44649d983f9af7186803 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60c4f52ade524293898425e4c6b9c4b6 = $(`<div id="html_60c4f52ade524293898425e4c6b9c4b6" style="width: 100.0%; height: 100.0%;">Новосибирск ТРЦ "Галерея Новосибирск"</div>`)[0];
+            popup_7a600851e0eb44649d983f9af7186803.setContent(html_60c4f52ade524293898425e4c6b9c4b6);
+        
+
+        circle_marker_004f0c359d8e40c9b1427261f8704ae9.bindPopup(popup_7a600851e0eb44649d983f9af7186803)
+        ;
+
+        
+    
+    
+            var circle_marker_1a5a7395493f421bbaa9d1c5cfcc8d64 = L.circleMarker(
+                [54.96361296533588, 82.93525796968106],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.6256, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_7f9e6dbbb260461d90ad260d489ad556 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9de1f043783549eeba7d1907aa36d33e = $(`<div id="html_9de1f043783549eeba7d1907aa36d33e" style="width: 100.0%; height: 100.0%;">Новосибирск ТЦ "Мега"</div>`)[0];
+            popup_7f9e6dbbb260461d90ad260d489ad556.setContent(html_9de1f043783549eeba7d1907aa36d33e);
+        
+
+        circle_marker_1a5a7395493f421bbaa9d1c5cfcc8d64.bindPopup(popup_7f9e6dbbb260461d90ad260d489ad556)
+        ;
+
+        
+    
+    
+            var circle_marker_b62761661b3e4b1f9f9fcf186c583264 = L.circleMarker(
+                [54.97212153272271, 73.28435824084553],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.3886, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_b18721f83101440d85448e4e3750caef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_300082b326d54cb2912b4845e74cfa30 = $(`<div id="html_300082b326d54cb2912b4845e74cfa30" style="width: 100.0%; height: 100.0%;">Омск ТЦ "Мега"</div>`)[0];
+            popup_b18721f83101440d85448e4e3750caef.setContent(html_300082b326d54cb2912b4845e74cfa30);
+        
+
+        circle_marker_b62761661b3e4b1f9f9fcf186c583264.bindPopup(popup_b18721f83101440d85448e4e3750caef)
+        ;
+
+        
+    
+    
+            var circle_marker_a6bcc301bdc046e7b922c4d8a1c72bfc = L.circleMarker(
+                [47.259882369829654, 39.71944439830313],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.6617, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_0b08157a715d470b9b7622538df7ec85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_029440b1188043feb8af0473d53f30e7 = $(`<div id="html_029440b1188043feb8af0473d53f30e7" style="width: 100.0%; height: 100.0%;">РостовНаДону ТРК "Мегацентр Горизонт"</div>`)[0];
+            popup_0b08157a715d470b9b7622538df7ec85.setContent(html_029440b1188043feb8af0473d53f30e7);
+        
+
+        circle_marker_a6bcc301bdc046e7b922c4d8a1c72bfc.bindPopup(popup_0b08157a715d470b9b7622538df7ec85)
+        ;
+
+        
+    
+    
+            var circle_marker_b9c408c755014b7e8af14c9301f8b789 = L.circleMarker(
+                [47.25986924888274, 39.719376814183626],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4943, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_42e94831cc614dc3bc99f89023c8fc4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab9705f1a1b149b98893746f8bc8b163 = $(`<div id="html_ab9705f1a1b149b98893746f8bc8b163" style="width: 100.0%; height: 100.0%;">РостовНаДону ТРК "Мегацентр Горизонт" Островной</div>`)[0];
+            popup_42e94831cc614dc3bc99f89023c8fc4e.setContent(html_ab9705f1a1b149b98893746f8bc8b163);
+        
+
+        circle_marker_b9c408c755014b7e8af14c9301f8b789.bindPopup(popup_42e94831cc614dc3bc99f89023c8fc4e)
+        ;
+
+        
+    
+    
+            var circle_marker_48ef60ff967e46059f1477562d89e8e9 = L.circleMarker(
+                [47.25554044000214, 39.7149579890257],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.9324, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_5a0184e668364113ad20c8bfa606b4b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd9422b05a5e40c893a7ea5dd203e954 = $(`<div id="html_cd9422b05a5e40c893a7ea5dd203e954" style="width: 100.0%; height: 100.0%;">РостовНаДону ТЦ "Мега"</div>`)[0];
+            popup_5a0184e668364113ad20c8bfa606b4b4.setContent(html_cd9422b05a5e40c893a7ea5dd203e954);
+        
+
+        circle_marker_48ef60ff967e46059f1477562d89e8e9.bindPopup(popup_5a0184e668364113ad20c8bfa606b4b4)
+        ;
+
+        
+    
+    
+            var circle_marker_0a9f05600eb241279424f75281c46343 = L.circleMarker(
+                [59.93186637067163, 30.35949391401205],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.4934, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_8908d40bfb274371a8a57d4bc65088dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4490690e6fb420ba88b7dc50c69046d = $(`<div id="html_b4490690e6fb420ba88b7dc50c69046d" style="width: 100.0%; height: 100.0%;">СПб ТК "Невский Центр"</div>`)[0];
+            popup_8908d40bfb274371a8a57d4bc65088dd.setContent(html_b4490690e6fb420ba88b7dc50c69046d);
+        
+
+        circle_marker_0a9f05600eb241279424f75281c46343.bindPopup(popup_8908d40bfb274371a8a57d4bc65088dd)
+        ;
+
+        
+    
+    
+            var circle_marker_a2db347fdf934251ba0a9afd9d3cafd9 = L.circleMarker(
+                [59.92526607201701, 30.320708956340265],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0608, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_fa3f1f7a5e7c466eb478383937c5b25d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad83499a155c4f95b1c4bb0fb2f894a7 = $(`<div id="html_ad83499a155c4f95b1c4bb0fb2f894a7" style="width: 100.0%; height: 100.0%;">СПб ТК "Сенная"</div>`)[0];
+            popup_fa3f1f7a5e7c466eb478383937c5b25d.setContent(html_ad83499a155c4f95b1c4bb0fb2f894a7);
+        
+
+        circle_marker_a2db347fdf934251ba0a9afd9d3cafd9.bindPopup(popup_fa3f1f7a5e7c466eb478383937c5b25d)
+        ;
+
+        
+    
+    
+            var circle_marker_7cf9166293e341aeb2368eaf7b4393e8 = L.circleMarker(
+                [53.20921819087658, 50.13694424079427],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4938, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_e1aec2af85fa4a6aad10c5fa109f1233 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70a44283e528416296b80ff728cad59b = $(`<div id="html_70a44283e528416296b80ff728cad59b" style="width: 100.0%; height: 100.0%;">Самара ТЦ "Мелодия"</div>`)[0];
+            popup_e1aec2af85fa4a6aad10c5fa109f1233.setContent(html_70a44283e528416296b80ff728cad59b);
+        
+
+        circle_marker_7cf9166293e341aeb2368eaf7b4393e8.bindPopup(popup_e1aec2af85fa4a6aad10c5fa109f1233)
+        ;
+
+        
+    
+    
+            var circle_marker_3737cbf2bfc4456799ddb10799ba9a16 = L.circleMarker(
+                [53.233070761246296, 50.20088826963057],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.1895, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_b70e5bd281b745b8bea6cb6107c63eb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2afcdd77c17c4bcd8972bb6f9ca465e0 = $(`<div id="html_2afcdd77c17c4bcd8972bb6f9ca465e0" style="width: 100.0%; height: 100.0%;">Самара ТЦ "ПаркХаус"</div>`)[0];
+            popup_b70e5bd281b745b8bea6cb6107c63eb2.setContent(html_2afcdd77c17c4bcd8972bb6f9ca465e0);
+        
+
+        circle_marker_3737cbf2bfc4456799ddb10799ba9a16.bindPopup(popup_b70e5bd281b745b8bea6cb6107c63eb2)
+        ;
+
+        
+    
+    
+            var circle_marker_480724d44db446f5b4893e2b488c5857 = L.circleMarker(
+                [56.30443327161207, 38.13323056972107],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.899, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_d59ea5add46c4ed1b03e96871b368497 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3f927a3155243a796f676c4ea4441c9 = $(`<div id="html_c3f927a3155243a796f676c4ea4441c9" style="width: 100.0%; height: 100.0%;">Сергиев Посад ТЦ "7Я"</div>`)[0];
+            popup_d59ea5add46c4ed1b03e96871b368497.setContent(html_c3f927a3155243a796f676c4ea4441c9);
+        
+
+        circle_marker_480724d44db446f5b4893e2b488c5857.bindPopup(popup_d59ea5add46c4ed1b03e96871b368497)
+        ;
+
+        
+    
+    
+            var circle_marker_0899de81601c4bc584bab6c69c563270 = L.circleMarker(
+                [61.239532936829676, 73.37386898521791],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.7637, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_0456ceac1cbc4953b438cf164351bc0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac7f78f7a2284144b7e40801d6195cbf = $(`<div id="html_ac7f78f7a2284144b7e40801d6195cbf" style="width: 100.0%; height: 100.0%;">Сургут ТРЦ "Сити Молл"</div>`)[0];
+            popup_0456ceac1cbc4953b438cf164351bc0e.setContent(html_ac7f78f7a2284144b7e40801d6195cbf);
+        
+
+        circle_marker_0899de81601c4bc584bab6c69c563270.bindPopup(popup_0456ceac1cbc4953b438cf164351bc0e)
+        ;
+
+        
+    
+    
+            var circle_marker_4cb9d63e7cb549209b00889bd6cd8ed9 = L.circleMarker(
+                [56.48875008598305, 84.97911338407611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4909, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_f6e321a779cb4cc294023b14b7a3b106 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c2cfe33e77c45ff867429e8e7781001 = $(`<div id="html_7c2cfe33e77c45ff867429e8e7781001" style="width: 100.0%; height: 100.0%;">Томск ТРЦ "Изумрудный Город"</div>`)[0];
+            popup_f6e321a779cb4cc294023b14b7a3b106.setContent(html_7c2cfe33e77c45ff867429e8e7781001);
+        
+
+        circle_marker_4cb9d63e7cb549209b00889bd6cd8ed9.bindPopup(popup_f6e321a779cb4cc294023b14b7a3b106)
+        ;
+
+        
+    
+    
+            var circle_marker_a317f56df5bc4687ab760086848472a0 = L.circleMarker(
+                [57.11763937726754, 65.54925082556653],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.709, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_3ca45aea4ad349d58600c7a59f41bd7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb5a54e402fd4f47a6c1da8db610b86e = $(`<div id="html_bb5a54e402fd4f47a6c1da8db610b86e" style="width: 100.0%; height: 100.0%;">Тюмень ТРЦ "Кристалл"</div>`)[0];
+            popup_3ca45aea4ad349d58600c7a59f41bd7d.setContent(html_bb5a54e402fd4f47a6c1da8db610b86e);
+        
+
+        circle_marker_a317f56df5bc4687ab760086848472a0.bindPopup(popup_3ca45aea4ad349d58600c7a59f41bd7d)
+        ;
+
+        
+    
+    
+            var circle_marker_0ac472e74f524efdadb0e471c6eb11fb = L.circleMarker(
+                [57.14895428030432, 65.5600427758361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.6238, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_45f376aaaae84f3181a41479ede3b483 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea15d99e96174a5ea7eb4a3b208fa8de = $(`<div id="html_ea15d99e96174a5ea7eb4a3b208fa8de" style="width: 100.0%; height: 100.0%;">Тюмень ТЦ "Гудвин"</div>`)[0];
+            popup_45f376aaaae84f3181a41479ede3b483.setContent(html_ea15d99e96174a5ea7eb4a3b208fa8de);
+        
+
+        circle_marker_0ac472e74f524efdadb0e471c6eb11fb.bindPopup(popup_45f376aaaae84f3181a41479ede3b483)
+        ;
+
+        
+    
+    
+            var circle_marker_d390f9e288534e8eb2ab6eed2ed2b7aa = L.circleMarker(
+                [57.170099196344665, 65.56748255625473],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8767, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_e5f072605d2e4887ba6f6b767ab39cd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3ea8eefab2c41f1a0afe29f67248e6f = $(`<div id="html_f3ea8eefab2c41f1a0afe29f67248e6f" style="width: 100.0%; height: 100.0%;">Тюмень ТЦ "Зеленый Берег"</div>`)[0];
+            popup_e5f072605d2e4887ba6f6b767ab39cd5.setContent(html_f3ea8eefab2c41f1a0afe29f67248e6f);
+        
+
+        circle_marker_d390f9e288534e8eb2ab6eed2ed2b7aa.bindPopup(popup_e5f072605d2e4887ba6f6b767ab39cd5)
+        ;
+
+        
+    
+    
+            var circle_marker_6bda46c49b22462fa45ba717dc3908c4 = L.circleMarker(
+                [54.7365130520063, 55.956097856181835],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.9744, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_73e8f71cf05b48eebc9c06826d2d4f7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5da5845e1fdf4cbe97adbf8339842b38 = $(`<div id="html_5da5845e1fdf4cbe97adbf8339842b38" style="width: 100.0%; height: 100.0%;">Уфа ТК "Центральный"</div>`)[0];
+            popup_73e8f71cf05b48eebc9c06826d2d4f7c.setContent(html_5da5845e1fdf4cbe97adbf8339842b38);
+        
+
+        circle_marker_6bda46c49b22462fa45ba717dc3908c4.bindPopup(popup_73e8f71cf05b48eebc9c06826d2d4f7c)
+        ;
+
+        
+    
+    
+            var circle_marker_dd090550e8b249a5a5f660ed537126cf = L.circleMarker(
+                [54.74994787441474, 56.00022231357387],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.1657, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_98c0e53bcb344c51b8c5d67d4cc6586b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7e2a52443e34436a03c99627668f125 = $(`<div id="html_c7e2a52443e34436a03c99627668f125" style="width: 100.0%; height: 100.0%;">Уфа ТЦ "Семья" 2</div>`)[0];
+            popup_98c0e53bcb344c51b8c5d67d4cc6586b.setContent(html_c7e2a52443e34436a03c99627668f125);
+        
+
+        circle_marker_dd090550e8b249a5a5f660ed537126cf.bindPopup(popup_98c0e53bcb344c51b8c5d67d4cc6586b)
+        ;
+
+        
+    
+    
+            var circle_marker_308601c82c9242ea9240f2fe31d9ffae = L.circleMarker(
+                [55.911296391178325, 37.396498027380815],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.579, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_2dfdca9a6f4e441bbc6ff09d58e2eab9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edc5c3769c0646f5b2a2a6f8dfac195d = $(`<div id="html_edc5c3769c0646f5b2a2a6f8dfac195d" style="width: 100.0%; height: 100.0%;">Химки ТЦ "Мега"</div>`)[0];
+            popup_2dfdca9a6f4e441bbc6ff09d58e2eab9.setContent(html_edc5c3769c0646f5b2a2a6f8dfac195d);
+        
+
+        circle_marker_308601c82c9242ea9240f2fe31d9ffae.bindPopup(popup_2dfdca9a6f4e441bbc6ff09d58e2eab9)
+        ;
+
+        
+    
+    
+            var circle_marker_7017e45a7a72431297f96c670944909a = L.circleMarker(
+                [55.78148544779807, 37.61111228504873],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.3388, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_55bfa821466743bc8b2f0d35bfe6e04d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe079f4e4f914d7d83e296fdab42617e = $(`<div id="html_fe079f4e4f914d7d83e296fdab42617e" style="width: 100.0%; height: 100.0%;">Цифровой склад 1С-Онлайн</div>`)[0];
+            popup_55bfa821466743bc8b2f0d35bfe6e04d.setContent(html_fe079f4e4f914d7d83e296fdab42617e);
+        
+
+        circle_marker_7017e45a7a72431297f96c670944909a.bindPopup(popup_55bfa821466743bc8b2f0d35bfe6e04d)
+        ;
+
+        
+    
+    
+            var circle_marker_76b9f5a06a75403c989ed31fb289996d = L.circleMarker(
+                [55.15357800870132, 37.45925219852253],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8079, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_0b6c0c714bfb4a248951996947bdcc7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd34957cceb347cc9358a9fd2ff3feaa = $(`<div id="html_fd34957cceb347cc9358a9fd2ff3feaa" style="width: 100.0%; height: 100.0%;">Чехов ТРЦ "Карнавал"</div>`)[0];
+            popup_0b6c0c714bfb4a248951996947bdcc7b.setContent(html_fd34957cceb347cc9358a9fd2ff3feaa);
+        
+
+        circle_marker_76b9f5a06a75403c989ed31fb289996d.bindPopup(popup_0b6c0c714bfb4a248951996947bdcc7b)
+        ;
+
+        
+    
+    
+            var circle_marker_7829c6be81a4419baca29244ad97e7a8 = L.circleMarker(
+                [62.02519863718233, 129.72022054106412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.1107, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_787d1029596e4a47af6577b90c564339 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5831f02c77e485aad6c103f74cda9b1 = $(`<div id="html_c5831f02c77e485aad6c103f74cda9b1" style="width: 100.0%; height: 100.0%;">Якутск Орджоникидзе, 56</div>`)[0];
+            popup_787d1029596e4a47af6577b90c564339.setContent(html_c5831f02c77e485aad6c103f74cda9b1);
+        
+
+        circle_marker_7829c6be81a4419baca29244ad97e7a8.bindPopup(popup_787d1029596e4a47af6577b90c564339)
+        ;
+
+        
+    
+    
+            var circle_marker_f5aaa65ba6d74b69b89d1669d2d24d7b = L.circleMarker(
+                [62.03154310580935, 129.74109877897183],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.1734, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_eee1cb61ed6c4961a1641950d630fa52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07850fcc21574b4d8d88d36c40948f16 = $(`<div id="html_07850fcc21574b4d8d88d36c40948f16" style="width: 100.0%; height: 100.0%;">Якутск ТЦ "Центральный"</div>`)[0];
+            popup_eee1cb61ed6c4961a1641950d630fa52.setContent(html_07850fcc21574b4d8d88d36c40948f16);
+        
+
+        circle_marker_f5aaa65ba6d74b69b89d1669d2d24d7b.bindPopup(popup_eee1cb61ed6c4961a1641950d630fa52)
+        ;
+
+        
+    
+    
+            var circle_marker_6a395950653d4cc0aa370ad61525b145 = L.circleMarker(
+                [57.69792594741873, 39.758911854420106],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8993, "stroke": true, "weight": 3}
+            ).addTo(map_2380078f1c784f6a8e9b2838b83dd5b0);
+        
+    
+        var popup_6e8b9e4945ea4cc293aed15940a13f24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d97818e108c4c5eb06c3c58e3116a48 = $(`<div id="html_1d97818e108c4c5eb06c3c58e3116a48" style="width: 100.0%; height: 100.0%;">Ярославль ТЦ "Альтаир"</div>`)[0];
+            popup_6e8b9e4945ea4cc293aed15940a13f24.setContent(html_1d97818e108c4c5eb06c3c58e3116a48);
+        
+
+        circle_marker_6a395950653d4cc0aa370ad61525b145.bindPopup(popup_6e8b9e4945ea4cc293aed15940a13f24)
+        ;
+
+        
+    
+</script>
